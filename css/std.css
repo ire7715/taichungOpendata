@@ -1,0 +1,164 @@
+html{
+	height: 100%;
+	/*font-family: Inconsolata;*/
+}
+body{
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	font-family: Calibri,"微軟正黑體";
+	font-weight: 200;
+	background: url(../image/wild_flowers.png) repeat;
+	/*background-color: #b0bfff;*/
+}
+a:link, a:visited{
+	color: #0047B2;
+	text-decoration: none;
+}
+a:hover{
+	color: #5CB8E6;
+}
+.fly{
+	z-index: 3;
+}
+.above{
+	z-index: 2;
+}
+.ground{
+	z-index: 1;
+}
+#top{
+	/*position: absolute;display: block;float: left;*/
+	padding: 10px 30px 10px 10px;
+	height: 25px;
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #FFFFFF),
+		color-stop(0.85, #DDDDDD)
+	);
+	background-image: -o-linear-gradient(bottom, #FFFFFF 0%, #DDDDDD 85%);
+	background-image: -moz-linear-gradient(bottom, #FFFFFF 0%, #DDDDDD 85%);
+	background-image: -webkit-linear-gradient(bottom, #FFFFFF 0%, #DDDDDD 85%);
+	background-image: -ms-linear-gradient(bottom, #FFFFFF 0%, #DDDDDD 85%);
+	background-image: linear-gradient(to bottom, #FFFFFF 0%, #DDDDDD 85%);
+	text-align: right;
+	/*border-bottom: 2px solid #DDD;*/
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+#top .block{
+	font-family: calibri;
+	font-size: 11px;
+	padding: 3px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+#top .block:hover{
+	background-color: #EEE;
+	border: 0px solid #CCC;
+	border-radius: 4px;
+	box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.2);
+}
+#title{
+	margin: -95px 0 0 10px;
+	width: 380px;
+	height: 150px;	/* real height = height-20px */
+	background: url(../image/title.png);
+	background-size: cover;
+	background-position: -30px 35px;
+	/*float: left;*/
+	position: absolute;
+	display: block;
+	border: 1px solid #DDD;
+	border-radius: 8px;
+	box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+	transition:margin-top 0.5s, background-position 0.5s, width 0.5s;
+}
+#title:hover{
+	margin-top: -20px;
+	background-position: 0 0px;
+	width: 455px;	/* height*3.5 */
+}
+#main{
+	height: 100% ;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box; /* Firefox, other Gecko */
+	box-sizing: border-box; /* Opera/IE 8+ */
+	padding: 70px 10px 54px/*=foot.height+foot.padding(top&bottom) */ 10px;
+	width: 1280px;	/*1280*/
+	margin: 0 auto;
+	margin-top: -45px;
+	/*background-color: #F00;*/
+}
+#main .block{
+	min-height: 95%;	/*   only the leaf node can use min-height: 100%, other parent nodes should use height: 100%.   */
+	/*display: inline-block;*/
+	border: 1px solid #888;
+	border-radius: 8px;
+	margin-left: 24px;
+	margin-bottom: 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	float: left;
+	background-color: rgba(255,255,255,0.6);
+}
+#arm{
+	width: 15%;
+}
+#arm p{
+	margin: 0px 0px 5px 0px;
+	font-weight: 900;
+	font-size: 16px;
+}
+.row{
+	margin-bottom: 5px;
+	-moz-hyphens:auto;
+	-ms-hyphens:auto;
+	-webkit-hyphens:auto;
+	hyphens:auto;
+	word-wrap:break-word;
+	font-size: 13px;
+}
+#content{
+	min-width: 80%;
+	width: auto;
+}
+#content .row{
+	margin: 10px 0 10px 0;
+}
+#content .date{
+	margin-right: 20px;
+	margin-left: 15px;
+	font-size: 14px;
+	width: 200px;
+}
+#foot{
+	margin-top: -54px;
+	padding: 5px 10px 5px 10px;
+	height: 43px;
+	text-align: center;
+	font-size: 14px;
+	/*background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #EEEEEE),
+		color-stop(0.7, #999999)
+	);
+	background-image: -o-linear-gradient(bottom, #EEEEEE 0%, #999999 70%);
+	background-image: -moz-linear-gradient(bottom, #EEEEEE 0%, #999999 70%);
+	background-image: -webkit-linear-gradient(bottom, #EEEEEE 0%, #999999 70%);
+	background-image: -ms-linear-gradient(bottom, #EEEEEE 0%, #999999 70%);
+	background-image: linear-gradient(to bottom, #EEEEEE 0%, #999999 70%);*/
+	background-color: rgba(255,255,255,0.6);
+	border-top: 1px dashed #000;
+	/*background-color: #0F0;*/
+}
+.clear{
+	clear: both;
+}

@@ -1,0 +1,27 @@
+#searchForm{
+	margin-top: 10px;
+	background-color: #eee;
+	width: 200px;
+	height: 25px;
+	border-radius: 4px;
+	display: inline;
+}
+#searchForm input[type="text"]{
+	height: 20px;
+	width: 150px;
+	border: 1px solid #c7c7c7;
+	border-radius: 6px;
+	box-shadow: inset 0px 0px 5px #ddd;
+	padding: 0 0 0 20px;
+	margin: 0px;
+	background: #fff url(../image/search-icon-16px.png) no-repeat 2px 2px;
+}
+/*.search
+{
+margin: 0px;
+padding 20px;
+width: 15px;
+height: 15px;
+background-color: rgba(255,255,255,0);
+border: 0px solid rgba(255,255,255,0);
+}*/

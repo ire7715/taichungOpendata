@@ -1,0 +1,81 @@
+.window{
+	background-color: #FFF;
+	border: 1px solid #777;
+	border-radius: 8px;
+	position: absolute;
+	min-width:670px;
+	min-height:355px;
+}
+.window .title{
+	border: 0px solid #FFF;
+	border-bottom: 1px solid #777;
+	border-radius: 8px 8px 0 0;
+	margin: 0px;
+	padding:5px 0 0 10px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box; /* Firefox, other Gecko */
+	box-sizing: border-box; /* Opera/IE 8+ */
+	width: inherit;
+	height: 24px;
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #9ECAFF),
+		color-stop(1, #127DFF)
+	);
+	background-image: -o-linear-gradient(bottom, #9ECAFF 0%, #127DFF 100%);
+	background-image: -moz-linear-gradient(bottom, #9ECAFF 0%, #127DFF 100%);
+	background-image: -webkit-linear-gradient(bottom, #9ECAFF 0%, #127DFF 100%);
+	background-image: -ms-linear-gradient(bottom, #9ECAFF 0%, #127DFF 100%);
+	background-image: linear-gradient(to bottom, #9ECAFF 0%, #127DFF 100%);
+	font-size: 11px;
+}
+#statistic_map{
+	/*-webkit-mask-position: 0px 24px;*/
+	/*mask: url(image/TaichungMap.svg#map_mask);*/
+	-webkit-mask-image: url(../image/map/TaichungMap.png);
+	background-color:#d7d7d7; 
+	width:670px;
+	height:330px;
+}
+#statistic_map .view{
+	position: absolute;
+	width:670px;
+	height:330px;
+	top: 24px;
+	left: 0px;
+}
+#statistic_map .view:nth-child(1){
+	/*z-index: 10;*/
+	/*background-color: #1F5C99;*/
+	background-color: rgba(31,92,153,1);
+}
+#statistic_map .view:nth-child(2){
+	/*z-index: 9;*/
+	/*background-color: #297ACC;*/
+	background-color: rgba(31,92,153,0.8);
+}
+#statistic_map .view:nth-child(3){
+	/*z-index: 8;*/
+	/*background-color: #3399FF;*/
+	background-color: rgba(31,92,153,0.6);
+}
+#statistic_map .view:nth-child(4){
+	/*z-index: 7;*/
+	/*background-color: #85C2FF;*/
+	background-color: rgba(31,92,153,0.4);
+}
+#statistic_map .view:nth-child(5){
+	/**z-index: 6;*/
+	/*background-color: #C2E0FF;*/
+	background-color: rgba(31,92,153,0.2);
+}
+/*#pie{
+	min-width:670px;
+	min-height:330px;
+}
+#bar{
+	min-width:670px;
+	min-height:330px;
+}*/
